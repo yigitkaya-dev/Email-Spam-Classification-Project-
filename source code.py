@@ -1,6 +1,7 @@
 "Loading the Email spam classification dataset CSV from Keggle"
 "https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv"
 
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
@@ -56,7 +57,7 @@ plt.show()
 # Creates a logistic regresion model with increased max iteration
 LG_model = LogisticRegression(max_iter = 700)
 LG_model.fit(X_train, y_train)
-y_pred_log_reg = LG.predict(X_test)
+y_pred_log_reg = LG_model.predict(X_test)
 
 # Calculates the accuracy,precision,recall and f1 scores
 LG_accuracy = accuracy_score(y_test, y_pred_log_reg)
