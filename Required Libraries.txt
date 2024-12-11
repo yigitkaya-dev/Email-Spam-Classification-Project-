@@ -1,0 +1,6 @@
+Below are the required Python Libraries that needs to be installed 
+in order to run the source code:
+
+Pandas
+scikit-learn
+matplotlib
